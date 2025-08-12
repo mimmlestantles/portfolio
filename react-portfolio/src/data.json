@@ -1,0 +1,187 @@
+{
+    "pages":[
+        {
+            "id":"education",
+            "title": "Education",
+            "categories": [
+                {
+                    "id": "college",
+                    "title": "College",
+                    "information": [
+                        {
+                            "id": "bachelor",
+                            "title": "Bachelor's Degree",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "School: University of Wyoming",
+                                        "Degree: B.S in Computer Science",
+                                        "Minor: Chinese, Honors, and International Engineering",
+                                        "Duration: 2021-2025",
+                                        "Graduated Cum Laude"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "workExperiences",
+            "title": "Work Experience",
+            "categories":[
+                {
+                    "id": "mathTutoring",
+                    "title": "Math Tutor",
+                    "information":[
+                        {
+                            "id":"tutor",
+                            "title": "Tutoring",
+                            "slides":[
+                                {
+                                    "id":"desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Facilitated over 100 scheduled one-on-one and drop-in tutoring sessions in College Algebra, Trigonometry, Calculus I-III, Applied Differential Equations, and Elementary Linear Algebra.",
+                                        "Adapted tutoring approaches and strategies to accommodate diverse learning styles and academic needs",
+                                        "Provided additional support for students’ confidence in mathematical knowledge"
+                                    ]
+                                },
+                                {
+                                    "id":"cert",
+                                    "title": "Certifications",
+                                    "content":[
+                                        "Received Level 1 CRLA Certification in 2022"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "uResearch",
+                    "title": "Undergraudate Research Assistant",
+                    "information":[
+                        {
+                            "id": "food",
+                            "title": "Food Insecurity in Wyoming",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Determined risk factors contributing to food insecurity in Wyoming",
+                                        "Collected and processed over 50 raw data sets regarding risk factors",
+                                        "Calculated the risk of food insecurity in Wyoming counties using the Grey Relational Analysis"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flu",
+                            "title": "Spread of Influenza and COVID-19 in WYoming ",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Efficiently gathered and organized 30 data sets of Flu and COVID-19 Data in Wyoming using R and Microsoft Excel",
+                                        "Analyzed and predicted infection rates for influenza using a differential equation model in MATLAB"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"projects",
+            "title": "Projects",
+            "categories": [
+                {
+                    "id": "movrs",
+                    "title": "moVRs",
+                    "information": [
+                        {
+                            "id": "abstract",
+                            "title": "Abstract",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "moVR is an application that enables the creation of custom layouts in VR spaces. Users can scan in or design objects and furniture as scale models and arrange them to explore different styles and configurations. This project utilizes some off-the-shelf tools to enable interaction with 3D space, and scan in 3D models. The application has various models that allow for multi-user customization, cross platform interaction, and accessible AR tools to maximize utility and user experience. Our aim is to help users visualize and design customizable spaces that can be explored and interacted with in virtual reality environments."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "scannerMode",
+                            "title": "Scanner Mode",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Scan your furniture to turn them into 3D models for upload."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "designerMode",
+                            "title": "Designer Mode",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Adjust your furniture configurations in your space via mobile phone.",
+                                        "Demo"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "myContributions",
+                            "title": "My Contributions",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Adjust your furniture configurations in your space via mobile phone.",
+                                        "Demo"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "dashboard",
+                    "title": "Interactive Dashboard for R1 Schools",
+                    "information": [
+                        {
+                            "id": "abstract",
+                            "title": "Abstract",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "This web application is an interactive dashboard that details the predicted contributing factors that go into the Carnegie Classification of Institutions of Higher Education tier list in 2018 and illustrates the effects of such factors for the University of Wyoming. Users can increase or decrease each factor via slider to predict the outcome of the university's ranking in the tier list."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

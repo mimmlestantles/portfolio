@@ -12,12 +12,21 @@ export default function Navigation(){
             case 1:
                 navigate("/workexperience");
                 break;
+            case 2:
+                navigate("/projects");
+                break;
+            case 3:
+                navigate("/skills");
+                break;
+            case 4:
+                navigate("/extracurriculars");
+                break;
             default:
         }
     }
     return <div className = "toolbar">
         {tabs.map((value: string,index)=>(
-                <button onClick = {()=>pick(index)}>
+                <button onClick = {()=>pick(index)} key = {index}>
                     {value}
                 </button>
             ))}

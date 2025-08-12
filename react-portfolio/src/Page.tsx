@@ -1,4 +1,5 @@
 import {OtherHeading} from './appComponents/Heading';
+import {useState} from 'react';
 import {useLocation} from 'react-router-dom';
 import Types from './pageComponents/Types';
 import Navigation from './pageComponents/Navigation';
@@ -45,6 +46,11 @@ export function Page(){
     type myMode={
         name: string;
         types: string[];
+    };
+
+    type infoDict={
+        title: string;
+        info: myMode[];
     }
 
     function mode(domainName: string):myMode{
@@ -63,15 +69,22 @@ export function Page(){
                 return {name:"", types:[]};
         }
     }
-
+    
+    const modeName=mode(location.pathname).name;
+    const modeType=mode(location.pathname).types;
     return (<div>
         <OtherHeading />
         <Navigation />
         <h1>
-            {mode(location.pathname).name}
+            {modeName}
         </h1>
-        <div className = "navigation">
-            <Types types={mode(location.pathname).types} />
+        <div>
+            <h4>Types</h4>
+            {modeType.map((value,index)=>(
+                <ul key = {index}>
+                    <button>{value}</button>
+                </ul>
+            ))}
         </div>
     </div>);
 }

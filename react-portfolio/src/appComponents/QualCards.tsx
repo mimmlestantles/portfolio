@@ -17,6 +17,15 @@ export default function QualCards(){
             case 1:
                 navigate("/workexperience");
                 break;
+            case 2:
+                navigate("/projects");
+                break;
+            case 3:
+                navigate("/skills");
+                break;
+            case 4:
+                navigate("/extracurriculars");
+                break;
             default:
                 console.log("nothing yet :)");
         }
