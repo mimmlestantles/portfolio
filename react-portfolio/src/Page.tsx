@@ -63,7 +63,7 @@ export function Page(){
                 </ul>
             ))}
             </div>
-            <Information all = {informationList}/>
+            <Information key={selectedPage-selectedCategory}all = {informationList}/>
         </div>
     </div>)
 }
