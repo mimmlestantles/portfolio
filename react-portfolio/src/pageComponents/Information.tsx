@@ -1,9 +1,27 @@
-export default function Information({info}: {info: String[]}){
+import type {Info} from '../types';
+import Details from './Details';
+import {useState} from 'react';
+
+/**
+ * Displays the episodes
+ */
+type allInfo={
+    all:Info[]
+}
+
+export default function Information({all}:allInfo){
+    const [clicked, setClicked] = useState(Array(all.length).fill(0));
+
+    function handleClick(i:number){
+
+    }
+
     return <div>
-        {info.map((content, index)=>(
-            <li key = {index}>
-                {content}
-            </li>
+        {all.map((c, index)=>(
+            <ul key = {index}>
+                <button><h5>{c.title}</h5></button>
+                <Details all={c.slides} />
+            </ul>
         ))}
     </div>
 }

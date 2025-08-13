@@ -5,15 +5,15 @@
             "title": "Education",
             "categories": [
                 {
-                    "id": "college",
-                    "title": "College",
+                    "id": "bachelor",
+                    "title": "Bachelor's Degree",
                     "information": [
                         {
                             "id": "bachelor",
                             "title": "Bachelor's Degree",
                             "slides":[
                                 {
-                                    "id": "desc",
+                                    "id": "desc1",
                                     "title": "Description",
                                     "content":[
                                         "School: University of Wyoming",
@@ -21,6 +21,44 @@
                                         "Minor: Chinese, Honors, and International Engineering",
                                         "Duration: 2021-2025",
                                         "Graduated Cum Laude"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "classes",
+                            "title": "Classes",
+                            "slides":[
+                                {
+                                    "id": "desc1",
+                                    "title": "Core Classes",
+                                    "content":[
+                                        "Data Structures and Algorithms",
+                                        "Discrete Math",
+                                        "Computer Security",
+                                        "Functional Programming",
+                                        "Computer Networks",
+                                        "Principles of Programming Languages",
+                                        "Theory of Computability"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "id": "desc2",
+                                    "title": "Electives",
+                                    "content":[
+                                        "Computer Graphics",
+                                        "Computer Animation",
+                                        "UI/UX Design",
+                                        "Scientific Computing"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -48,6 +86,9 @@
                                         "Facilitated over 100 scheduled one-on-one and drop-in tutoring sessions in College Algebra, Trigonometry, Calculus I-III, Applied Differential Equations, and Elementary Linear Algebra.",
                                         "Adapted tutoring approaches and strategies to accommodate diverse learning styles and academic needs",
                                         "Provided additional support for students’ confidence in mathematical knowledge"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 },
                                 {
@@ -55,6 +96,9 @@
                                     "title": "Certifications",
                                     "content":[
                                         "Received Level 1 CRLA Certification in 2022"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -76,13 +120,16 @@
                                         "Determined risk factors contributing to food insecurity in Wyoming",
                                         "Collected and processed over 50 raw data sets regarding risk factors",
                                         "Calculated the risk of food insecurity in Wyoming counties using the Grey Relational Analysis"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
                         },
                         {
                             "id": "flu",
-                            "title": "Spread of Influenza and COVID-19 in WYoming ",
+                            "title": "Spread of Influenza and COVID-19 in Wyoming ",
                             "slides":[
                                 {
                                     "id": "desc",
@@ -90,6 +137,27 @@
                                     "content":[
                                         "Efficiently gathered and organized 30 data sets of Flu and COVID-19 Data in Wyoming using R and Microsoft Excel",
                                         "Analyzed and predicted infection rates for influenza using a differential equation model in MATLAB"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "tools",
+                            "title": "Tools",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Excel",
+                                        "MATLAB",
+                                        "R"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -114,7 +182,11 @@
                                     "id": "desc",
                                     "title": "Description",
                                     "content":[
-                                        "moVR is an application that enables the creation of custom layouts in VR spaces. Users can scan in or design objects and furniture as scale models and arrange them to explore different styles and configurations. This project utilizes some off-the-shelf tools to enable interaction with 3D space, and scan in 3D models. The application has various models that allow for multi-user customization, cross platform interaction, and accessible AR tools to maximize utility and user experience. Our aim is to help users visualize and design customizable spaces that can be explored and interacted with in virtual reality environments."
+                                        "moVR is an application that enables the creation of custom layouts in VR spaces. Users can scan in or design objects and furniture as scale models and arrange them to explore different styles and configurations. This project utilizes some off-the-shelf tools to enable interaction with 3D space, and scan in 3D models. The application has various models that allow for multi-user customization, cross platform interaction, and accessible AR tools to maximize utility and user experience. Our aim is to help users visualize and design customizable spaces that can be explored and interacted with in virtual reality environments.",
+                                        "Link to presentations"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -124,10 +196,23 @@
                             "title": "Scanner Mode",
                             "slides":[
                                 {
-                                    "id": "desc",
+                                    "id": "desc1",
                                     "title": "Description",
                                     "content":[
                                         "Scan your furniture to turn them into 3D models for upload."
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "id": "desc2",
+                                    "title": "Examples",
+                                    "content":[
+                                        "Some photos or something"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -137,25 +222,54 @@
                             "title": "Designer Mode",
                             "slides":[
                                 {
-                                    "id": "desc",
+                                    "id": "desc1",
                                     "title": "Description",
                                     "content":[
-                                        "Adjust your furniture configurations in your space via mobile phone.",
-                                        "Demo"
+                                        "Adjust your furniture configurations in your space via mobile phone."
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "id": "desc2",
+                                    "title": "Build and Furnish",
+                                    "content":[
+                                        "There are two modes, Build and Furniture",
+                                        "The build mode allows users to build the overall layout of your desired space",
+                                        "Furniture mode allows users to manage the interior design by moving furniture in the rooms"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                },
+                                {
+                                    "id": "desc3",
+                                    "title": "Building your space",
+                                    "content":[
+                                        "Build rooms by tapping and dragging on the canvas",
+                                        "Picture"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
                         },
                         {
-                            "id": "myContributions",
-                            "title": "My Contributions",
+                            "id": "tool",
+                            "title": "Tools",
                             "slides":[
                                 {
                                     "id": "desc",
-                                    "title": "Description",
+                                    "title": "Tools",
                                     "content":[
-                                        "Adjust your furniture configurations in your space via mobile phone.",
-                                        "Demo"
+                                        "Android Studios",
+                                        "Java",
+                                        "XML"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]
@@ -175,6 +289,407 @@
                                     "title": "Description",
                                     "content":[
                                         "This web application is an interactive dashboard that details the predicted contributing factors that go into the Carnegie Classification of Institutions of Higher Education tier list in 2018 and illustrates the effects of such factors for the University of Wyoming. Users can increase or decrease each factor via slider to predict the outcome of the university's ranking in the tier list."
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "tools",
+                            "title": "Tools",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "RStudio",
+                                        "R",
+                                        "MATLAB"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"skillz",
+            "title": "Skills",
+            "categories": [
+                {
+                    "id": "programming",
+                    "title": "Programming",
+                    "information": [
+                        {
+                            "id": "python",
+                            "title": "Python",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "c++",
+                            "title": "C++",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "java",
+                            "title": "Java",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "r",
+                            "title": "R",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "matlab",
+                            "title": "MATLAB",
+                            "slides":[
+                                
+                            ]
+                        },{
+                            "id": "html",
+                            "title": "HTML",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "css",
+                            "title": "CSS",
+                            "slides":[
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "frameworks",
+                    "title": "Frameworks",
+                    "information": [
+                        {
+                            "id": "github",
+                            "title": "GitHub",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "android-studio",
+                            "title": "Android Studio",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "unity",
+                            "title": "Unity",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "blendr",
+                            "title": "Blender",
+                            "slides":[
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "languages",
+                    "title": "Spoken Languages",
+                    "information": [
+                        {
+                            "id": "english",
+                            "title": "English",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "chinese",
+                            "title": "Chinese",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "indo",
+                            "title": "Indonesian",
+                            "slides":[
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "soft-skills",
+                    "title": "Soft Skills",
+                    "information": [
+                        {
+                            "id": "fast-learner",
+                            "title": "Fast Learner",
+                            "slides":[
+                               
+                            ]
+                        },
+                        {
+                            "id": "communicator",
+                            "title": "Good Communicator",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "self-motivated",
+                            "title": "Self Motivated",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "organized",
+                            "title": "Organized",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "details",
+                            "title": "Detail-Oriented",
+                            "slides":[
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "learning",
+                    "title": "Currently Learning",
+                    "information": [
+                        {
+                            "id": "react",
+                            "title": "React",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "javascript",
+                            "title": "JavaScript",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "typescript",
+                            "title": "TypeScript",
+                            "slides":[
+                                
+                            ]
+                        },
+                        {
+                            "id": "sql",
+                            "title": "SQL",
+                            "slides":[
+                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"activities",
+            "title": "Extracurricular Activities",
+            "categories": [
+                {
+                    "id": "abroad",
+                    "title": "Study Abroad",
+                    "information": [
+                        {
+                            "id": "2024",
+                            "title": "Singapore and Malaysia (Summer 2024)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Group research leader for studying culture in Singapore and Malaysia",
+                                        "Built cross-cultural relationships",
+                                        "Volunteered at local elementary school",
+                                        "Gave presentation on different ethnic groups in the region"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "viola",
+                    "title": "UW Symphony Orchestra",
+                    "information": [
+                        {
+                            "id": "principal",
+                            "title": "Assistant Principal Violist",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Led weekly practice sessions",
+                                        "Participated in community outreach"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "chamber",
+                            "title": "Chamber Group",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Performed in 5+ chamber groups",
+                                        "Performed in Ivinson Home for Ladies",
+                                        "Videos"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "inasa",
+                    "title": "Indonesian Student Association (INASA)",
+                    "information": [
+                        {
+                            "id": "role",
+                            "title": "Bachelor's Degree",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Organized budget for Indonesian Night (2024)",
+                                        "Managed funds for internal events for the club"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "volunteer",
+                    "title": "Volunteer Work",
+                    "information": [
+                        {
+                            "id": "volunteer1",
+                            "title": "Big Event (2021)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Cleaned Laramie parks and neighborhoods"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "volunteer2",
+                            "title": "Chinese New Year Celebration (2023)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Put up decoration for events",
+                                        "Served guests food"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "volunteer3",
+                            "title": "Twice Event (2022)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Put up decoration for events",
+                                        "Served guests food"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "volunteer4",
+                            "title": "Lamb of God (2023, 2024)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Played viola for local church event",
+                                        "Attended weekly rehersals"
+                                    ],
+                                    "pictures":[
+                                        ""
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "volunteer5",
+                            "title": "High School Reachout (2021-2023)",
+                            "slides":[
+                                {
+                                    "id": "desc",
+                                    "title": "Description",
+                                    "content":[
+                                        "Taught high school students about Chinese culture"
+                                    ],
+                                    "pictures":[
+                                        ""
                                     ]
                                 }
                             ]

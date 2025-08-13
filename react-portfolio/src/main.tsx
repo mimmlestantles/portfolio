@@ -5,6 +5,9 @@ import App from './App.tsx'
 import {Page} from './Page.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+/**
+ * Main handles all of the routes in the website
+ */
 const router= createBrowserRouter([
   {path: "/", element: <App />},
   {path: "/education", element: <Page/>},

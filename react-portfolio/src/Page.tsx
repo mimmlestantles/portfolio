@@ -1,90 +1,69 @@
 import {OtherHeading} from './appComponents/Heading';
 import {useState} from 'react';
 import {useLocation} from 'react-router-dom';
-import Types from './pageComponents/Types';
 import Navigation from './pageComponents/Navigation';
+import data from './data.json';
+import Information from './pageComponents/Information';
 import './Page.css'
+import type {Pages,Info} from './types';
+
+/**
+ * This function handles the page where the user can navigate between my resume
+ * @returns 
+ */
 
 export function Page(){
     const location = useLocation();
-    const title: string[] = [
-        "Education",
-        "Work Experiences",
-        "Projects",
-        "Skills",
-        "Extra Curriculars"
-    ];
-    const eduTypes: string[] = [
-        'College'
-    ];
-    const workTypes: string[]= [
-        'Math Tutoring',
-        'Undergraduate Research Assistant',
-        'Research at CEDAR'
-    ];
-    const projectTypes: string[]=[
-        'moVRs',
-        'Interactive Dashboard Website',
-        'Illustrations'
-    ];
-
-    const skillTypes: string[]=[
-        'Programming',
-        'Frameworks/Libraries',
-        'Languages',
-        'Soft Skills',
-        'Currently Learning'
-    ];
-
-    const activitiesTypes: string []=[
-        'Study Abroad',
-        'UW Symphony Orchestra',
-        'Indonesian Student Association (INASA)',
-        'Other Club Activities'
-    ];
-    
-    type myMode={
-        name: string;
-        types: string[];
-    };
-
-    type infoDict={
-        title: string;
-        info: myMode[];
-    }
-
-    function mode(domainName: string):myMode{
+    const page: Pages[]= data.pages;
+    function mode(domainName: string):number{
         switch(domainName){
-            case '/education':
-                return {name:title[0],types:eduTypes};
-            case '/workexperience':
-                return {name:title[1],types:workTypes};
-            case '/projects':
-                return {name:title[2], types: projectTypes};
-            case '/skills':
-                return {name:title[3], types: skillTypes};
-            case '/extracurriculars':
-                return {name:title[4], types: activitiesTypes};
+            case "/education":
+                return 0;
+            case "/workexperience":
+                return 1;
+            case "/projects":
+                return 2;
+            case "/skills":
+                return 3;
+            case "/extracurriculars":
+                return 4;
             default:
-                return {name:"", types:[]};
+                return 5;
         }
     }
+
+    const [selectedPage, selectPage] = useState(mode(location.pathname));
+    const [selectedCategory, selectCategory] = useState(0);
+    const setPage = (i: number) =>{
+        selectPage(i);
+        selectCategory(0);
+    };
+
+    if(!page[selectedPage]){
+        return (<div>
+            <OtherHeading/>
+            <Navigation clicked={setPage}/>
+            <h1>Page not found</h1>
+        </div>);
+    }
+
     
-    const modeName=mode(location.pathname).name;
-    const modeType=mode(location.pathname).types;
-    return (<div>
+    const informationList: Info[] = page[selectedPage].categories[selectedCategory].information;
+    
+    return(<div>
         <OtherHeading />
-        <Navigation />
-        <h1>
-            {modeName}
-        </h1>
-        <div>
-            <h4>Types</h4>
-            {modeType.map((value,index)=>(
-                <ul key = {index}>
-                    <button>{value}</button>
+        <Navigation clicked={setPage}/>
+        <h1>{page[selectedPage].title}</h1>
+        <div className = 'navigation'>
+            <div>
+                <h3>Categories</h3>
+                {page[selectedPage].categories.map((val,index)=>(
+                <ul key={val.id}>
+                    <button onClick = {()=>selectCategory(index)}>{val.title}</button>
                 </ul>
             ))}
+            </div>
+            <Information all = {informationList}/>
         </div>
-    </div>);
+    </div>)
 }

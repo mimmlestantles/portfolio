@@ -1,6 +1,10 @@
 import {useNavigate} from 'react-router-dom';
 import './Navigation.css';
-export default function Navigation(){
+
+type tabClicked ={
+    clicked : (i:number)=>void;
+}
+export default function Navigation({clicked}: tabClicked){
     const tabs:string[] = ["Education", "Work Experiences", "Projects", "Skills", "Extra Curriculars"];
     const navigate = useNavigate();
 
@@ -24,9 +28,13 @@ export default function Navigation(){
             default:
         }
     }
+    function click(i:number){
+        clicked(i);
+        pick(i);
+    }
     return <div className = "toolbar">
         {tabs.map((value: string,index)=>(
-                <button onClick = {()=>pick(index)} key = {index}>
+                <button onClick = {()=>click(index)} key = {index}>
                     {value}
                 </button>
             ))}
